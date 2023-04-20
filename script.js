@@ -172,6 +172,7 @@ function fifthStepSubmitHandler () {
 	document.getElementById("step4").style.display = 'none';
 	document.getElementById("step5").style.display = 'none';
 	document.getElementById("result").style.display = 'block';
+	document.getElementById("w-node-_768a9daa-ef24-7190-8a42-6f6936559b2f-81421418").style.display = 'block';
 }
 
 function secondStepBackHandler () {
