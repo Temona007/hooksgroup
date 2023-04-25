@@ -173,6 +173,11 @@ function fifthStepSubmitHandler () {
 	document.getElementById("step5").style.display = 'none';
 	document.getElementById("result").style.display = 'block';
 	document.getElementById("form_block").style.display = 'block';
+	
+	let name = 'Artem';
+	document.getElementById('Name-2').setAttribute('value','My default value');
+	document.getElementById('Phone-2').value='380632254091'; 
+	console.log('ADD INPUT DATA');
 }
 
 function secondStepBackHandler () {
@@ -226,12 +231,3 @@ var opt = {
 btn.addEventListener("click", function() {
  html2pdf().set(opt).from(createpdf).save();
 });
-
-
-function addDataToWebflowForm() {
-	let name = 'Artem';
-	document.getElementById('Name-2').setAttribute('value','My default value');
-	document.getElementById('Phone-2').value='380632254091'; 
-	console.log('ADD INPUT DATA');
-}
-
