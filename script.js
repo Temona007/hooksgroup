@@ -231,6 +231,7 @@ btn.addEventListener("click", function() {
 function addDataToWebflowForm() {
 	let name = 'Artem'
 	document.getElementById('Name-2').setAttribute('value','My default value');
-	document.getElementById('Phone-2').value='380632254091' ; 
+	document.getElementById('Phone-2').value='380632254091'; 
+	console.log('ADD INPUT DATA');
 }
 
