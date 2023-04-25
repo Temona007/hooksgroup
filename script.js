@@ -176,6 +176,12 @@ function fifthStepSubmitHandler () {
 	
 	const websiteType = document.querySelector('.moreRevenue:checked').value;
 	document.getElementById('Pages-you-need-to-generate-more-revenue-from').setAttribute('value', websiteType);
+	
+	const howManyPages = document.querySelector('.how-many-pages:checked').value;
+	document.getElementById('how-many-pages').setAttribute('value', howManyPages);
+	
+	const conversionObject = document.querySelector('.moreRevenue:checked').value;
+	document.getElementById('conversion-object').setAttribute('value', conversionObject);
 }
 
 function secondStepBackHandler () {
