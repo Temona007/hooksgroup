@@ -107,12 +107,15 @@ function hooksGroupCalc() {
 	counterAnim("#result_dollar",       			0, result_dollar, 1000);
 	counterAnim("#est_monthly_revenue", 		  0, monthlyRevenue, 1000);
 	counterAnim("#est_monthly_revenue_fixed", 0, monthlyRevenue, 1000);
+	
+	// Push input results to Webflow form
+	document.getElementById('monthlyRevenueResult').setAttribute('value',    monthlyRevenue);
 }
 
 function sliderChanger() {
 	let monthlyTraffic    = document.getElementById('monthlyTraffic').value;
 	let conversionRevenue = document.getElementById('conversionRevenue').value;
-	let conversionRate 	  = document.getElementById('ranger').value;
+	let conversionRate    = document.getElementById('ranger').value;
 
 	let conversions    = conversionRate / 100 * monthlyTraffic;
 	let monthlyRevenue = conversions * conversionRevenue;
@@ -174,6 +177,8 @@ function fifthStepSubmitHandler () {
 	document.getElementById("result").style.display = 'block';
 	document.getElementById("form_block").style.display = 'block';
 	
+	
+	// Push input results to Webflow form
 	const websiteType = document.querySelector('.moreRevenue:checked').value;
 	document.getElementById('pages-you-need').setAttribute('value', websiteType);
 	
