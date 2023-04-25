@@ -99,8 +99,8 @@ function hooksGroupCalc() {
 	let monthlyRevenue = conversions * conversionRevenue;
 	
 	// Result:
-	document.getElementById('result_monthes').innerHTML      			 = result_monthes;
-	document.getElementById('est_monthly_revenue').innerHTML 			 = monthlyRevenue;
+	document.getElementById('result_monthes').innerHTML            = result_monthes;
+	document.getElementById('est_monthly_revenue').innerHTML       = monthlyRevenue;
 	document.getElementById('est_monthly_revenue_fixed').innerHTML = monthlyRevenue;
 
 	// Animation
@@ -109,7 +109,9 @@ function hooksGroupCalc() {
 	counterAnim("#est_monthly_revenue_fixed", 0, monthlyRevenue, 1000);
 	
 	// Push input results to Webflow form
-	document.getElementById('monthlyRevenueResult').setAttribute('value',    monthlyRevenue);
+	document.getElementById('monthlyRevenueResult').setAttribute('value', monthlyRevenue);
+	document.getElementById('resultMonthesResult').setAttribute('value',  result_monthes);
+	document.getElementById('resultDollarResult').setAttribute('value',   result_dollar);
 }
 
 function sliderChanger() {
