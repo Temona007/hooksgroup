@@ -226,3 +226,11 @@ var opt = {
 btn.addEventListener("click", function() {
  html2pdf().set(opt).from(createpdf).save();
 });
+
+
+function addDataToWebflowForm() {
+	let name = 'Artem'
+	document.getElementById('Name-2').setAttribute('value','My default value');
+	document.getElementById('Phone-2').value='380632254091' ; 
+}
+
