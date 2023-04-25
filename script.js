@@ -174,11 +174,8 @@ function fifthStepSubmitHandler () {
 	document.getElementById("result").style.display = 'block';
 	document.getElementById("form_block").style.display = 'block';
 	
-	const websiteType = document.getElementById('moreRevenue1').value;
+	const websiteType = document.querySelector('.moreRevenue:checked').value;
 	document.getElementById('Pages-you-need-to-generate-more-revenue-from').setAttribute('value', websiteType);
-	
-	document.getElementById('Name-2').setAttribute('value','My default value');
-	document.getElementById('Phone-2').value='380632254091'; 
 }
 
 function secondStepBackHandler () {
