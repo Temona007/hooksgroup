@@ -182,6 +182,14 @@ function fifthStepSubmitHandler () {
 	
 	const conversionObject = document.querySelector('.conversion-object:checked').value;
 	document.getElementById('Conversion-Object').setAttribute('value', conversionObject);
+	
+	const monthlyTraffic    = document.getElementById('monthlyTraffic').value;
+	const conversionRate    = document.getElementById('conversionRate').value;
+	const conversionRevenue = document.getElementById('conversionRevenue').value;
+	
+	document.getElementById('monthlyTrafficInput').setAttribute('value',    monthlyTraffic);
+	document.getElementById('conversionRateInput').setAttribute('value',    conversionRate);
+	document.getElementById('conversionRevenueInput').setAttribute('value', conversionRevenue);
 }
 
 function secondStepBackHandler () {
