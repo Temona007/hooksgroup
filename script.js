@@ -180,7 +180,7 @@ function fifthStepSubmitHandler () {
 	const howManyPages = document.querySelector('.how-many-pages:checked').value;
 	document.getElementById('how-many-pages').setAttribute('value', howManyPages);
 	
-	const conversionObject = document.querySelector('.moreRevenue:checked').value;
+	const conversionObject = document.querySelector('.conversionObject:checked').value;
 	document.getElementById('conversion-object').setAttribute('value', conversionObject);
 }
 
