@@ -109,9 +109,9 @@ function hooksGroupCalc() {
 	counterAnim("#est_monthly_revenue_fixed", 0, monthlyRevenue, 1000);
 	
 	// Push input results to Webflow form
-// 	document.getElementById('monthlyRevenueResult').setAttribute('value', monthlyRevenue);
-// 	document.getElementById('resultMonthesResult').setAttribute('value',  result_monthes);
-// 	document.getElementById('resultDollarResult').setAttribute('value',   result_dollar);
+	document.getElementById('monthlyRevenueResult').setAttribute('value', monthlyRevenue);
+	document.getElementById('resultMonthesResult').setAttribute('value',  result_monthes);
+	document.getElementById('resultDollarResult').setAttribute('value',   result_dollar);
 }
 
 function sliderChanger() {
@@ -181,22 +181,22 @@ function fifthStepSubmitHandler () {
 	
 	
 	// Push input results to Webflow form
-// 	const websiteType = document.querySelector('.moreRevenue:checked').value;
-// 	document.getElementById('pages-you-need').setAttribute('value', websiteType);
+	const websiteType = document.querySelector('.moreRevenue:checked').value;
+	document.getElementById('pages-you-need').setAttribute('value', websiteType);
 	
-// 	const howManyPages1 = document.querySelector('.how-many-pages:checked').value;
-// 	document.getElementById('how-many-pages').setAttribute('value', howManyPages1);
+	const howManyPages1 = document.querySelector('.how-many-pages:checked').value;
+	document.getElementById('how-many-pages').setAttribute('value', howManyPages1);
 	
-// 	const conversionObject = document.querySelector('.conversion-object:checked').value;
-// 	document.getElementById('Conversion-Object').setAttribute('value', conversionObject);
+	const conversionObject = document.querySelector('.conversion-object:checked').value;
+	document.getElementById('Conversion-Object').setAttribute('value', conversionObject);
 	
-// 	const monthlyTraffic    = document.getElementById('monthlyTraffic').value;
-// 	const conversionRate    = document.getElementById('conversionRate').value;
-// 	const conversionRevenue = document.getElementById('conversionRevenue').value;
+	const monthlyTraffic    = document.getElementById('monthlyTraffic').value;
+	const conversionRate    = document.getElementById('conversionRate').value;
+	const conversionRevenue = document.getElementById('conversionRevenue').value;
 	
-// 	document.getElementById('monthlyTrafficInput').setAttribute('value',    monthlyTraffic);
-// 	document.getElementById('conversionRateInput').setAttribute('value',    conversionRate);
-// 	document.getElementById('conversionRevenueInput').setAttribute('value', conversionRevenue);
+	document.getElementById('monthlyTrafficInput').setAttribute('value',    monthlyTraffic);
+	document.getElementById('conversionRateInput').setAttribute('value',    conversionRate);
+	document.getElementById('conversionRevenueInput').setAttribute('value', conversionRevenue);
 }
 
 function secondStepBackHandler () {
